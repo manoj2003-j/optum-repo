@@ -1,0 +1,10 @@
+name: 'san dev infra terraform plan'
+run name:deploy to dev infra by@${{github.actor}}for terraform plan and terraform apply
+
+on:
+ workflow_dispatch:
+  inputs:
+  terraform_aooly_task:
+    type:boolean
+    description:;please choose wheather terraform apply task is required or not'
+    
